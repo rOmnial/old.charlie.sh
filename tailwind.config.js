@@ -10,6 +10,9 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
+            colors: {
+                'brand': '#699AD8'
+            },
             fontFamily: {
                 sans: ['Ubuntu', ...defaultTheme.fontFamily.sans],
             }
