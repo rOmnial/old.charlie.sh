@@ -76,16 +76,16 @@
                             <section>
                                 <h2 class="bg-blue-400 px-1 py-0.5 max-w-max text-white mb-2">Analytics</h2>
                                 <p class="text-gray-100">
-                                    According to <a href="" class="text-purple-200 underline">Fathom Analytics</a>, I currently have <span class="text-blue-200">{{ number_format($liveVisitors) }}</span> {{ Str::plural('visitor', $liveVisitors) }} across all my sites - with a total of <span class="text-blue-200">{{ number_format($totalViews) }}</span> page {{ Str::plural('visit', $totalViews) }} in the last 30 days.
+                                    According to <a href="" class="text-purple-200 underline">Fathom Analytics</a>, I currently have a combined total of <span class="text-blue-200">{{ number_format($liveVisitors) }}</span> live {{ Str::plural('visitor', $liveVisitors) }} and <span class="text-blue-200">{{ number_format($totalViews) }}</span> page {{ Str::plural('visit', $totalViews) }} in the last 30 days - across all my sites.
                                 </p>
                             </section>
                             <section>
                                 <h2 class="bg-blue-400 px-1 py-0.5 max-w-max text-white mb-2">Projects</h2>
-                                <p class="text-gray-100">
-                                    🎮 <a href="https://twitter.com/heychazza">joinservers.com</a>
-                                    📊 <a href="https://twitter.com/heychazza">analyse.org</a>
-                                    🚗 <a href="https://twitter.com/heychazza">btcczone.com</a>
-                                </p>
+                                <div class="text-gray-100 flex items-center space-x-4">
+                                    <div>🎮 <a href="https://joinservers.com">joinservers.com</a></div>
+                                    <div>📊 <a href="https://analyse.org">analyse.org</a></div>
+                                    <div>🚗 <a href="https://btcczone.com">btcczone.com</a></div>
+                                </div>
                             </section>
                             <section>
                                 <h2 class="bg-blue-400 px-1 py-0.5 max-w-max text-white mb-2">Contact</h2>
