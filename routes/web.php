@@ -17,16 +17,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $response = ListRequest::build()
-        ->authenticate()
-        ->send()
-        ->json('data');
+    $sites = [];
+    if(Cache::get('site-pages')) {
+        $sites = Cache::get('site-pages');
+    } else {
+        $sites = ListRequest::build()
+            ->authenticate()
+            ->send()
+            ->json('data');
+        Cache::add('sites', $sites, now()->addMinutes(5));
+    }
 
     $liveVisitors = 0;
     if (Cache::get('total-visitors')) {
         $liveVisitors = Cache::get('total-visitors');
     } else {
-        foreach ($response as $site) {
+        foreach ($sites as $site) {
             $siteData = CurrentVisitorsRequest::build()
                 ->authenticate()
                 ->siteId($site['id'])
@@ -34,13 +40,14 @@ Route::get('/', function () {
                 ->json();
             $liveVisitors += $siteData['total'];
         }
+        Cache::add('total-visitors', $liveVisitors, now()->addMinutes(5));
     }
 
     $totalViews = 0;
     if (Cache::get('total-views')) {
         $totalViews = Cache::get('total-views');
     } else {
-        foreach ($response as $site) {
+        foreach ($sites as $site) {
             $siteData = AggregationRequest::build()
                 ->authenticate()
                 ->siteId($site['id'])
@@ -52,10 +59,8 @@ Route::get('/', function () {
                 ->json();
             $totalViews += $siteData[0]['pageviews'];
         }
+        Cache::add('total-views', $totalViews, now()->addMinutes(5));
     }
-
-    Cache::add('total-visitors', $liveVisitors, now()->addMinutes(5));
-    Cache::add('total-views', $totalViews, now()->addMinutes(5));
 
     return view('welcome', compact('liveVisitors', 'totalViews'));
 });

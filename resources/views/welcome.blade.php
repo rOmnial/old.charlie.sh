@@ -76,7 +76,7 @@
                             <section>
                                 <h2 class="bg-blue-400 px-1 py-0.5 max-w-max text-white mb-2">Analytics</h2>
                                 <p class="text-gray-100">
-                                    According to <a href="" class="text-purple-200 underline">Fathom Analytics</a>, I currently have <span class="text-blue-200">{{ number_format($liveVisitors) }}</span> visitors across all my sites - with a total of <span class="text-blue-200">{{ number_format($totalViews) }}</span> visitors in the last 30 days.
+                                    According to <a href="" class="text-purple-200 underline">Fathom Analytics</a>, I currently have <span class="text-blue-200">{{ number_format($liveVisitors) }}</span> {{ Str::plural('visitor', $liveVisitors) }} across all my sites - with a total of <span class="text-blue-200">{{ number_format($totalViews) }}</span> page {{ Str::plural('visit', $totalViews) }} in the last 30 days.
                                 </p>
                             </section>
                             <section>
