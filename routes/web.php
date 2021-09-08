@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $sites = [];
-    if(Cache::get('site-pages')) {
+    if(Cache::has('site-pages')) {
         $sites = Cache::get('site-pages');
     } else {
         $sites = ListRequest::build()
@@ -29,7 +29,7 @@ Route::get('/', function () {
     }
 
     $liveVisitors = 0;
-    if (Cache::get('total-visitors')) {
+    if (Cache::has('total-visitors')) {
         $liveVisitors = Cache::get('total-visitors');
     } else {
         foreach ($sites as $site) {
@@ -44,7 +44,7 @@ Route::get('/', function () {
     }
 
     $totalViews = 0;
-    if (Cache::get('total-views')) {
+    if (Cache::has('total-views')) {
         $totalViews = Cache::get('total-views');
     } else {
         foreach ($sites as $site) {
