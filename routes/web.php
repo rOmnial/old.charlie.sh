@@ -1,5 +1,8 @@
 <?php
 
+use App\Transporter\Requests\Sites\AggregationRequest;
+use App\Transporter\Requests\Sites\CurrentVisitorsRequest;
+use App\Transporter\Requests\Sites\ListRequest;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +17,45 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $response = ListRequest::build()
+        ->authenticate()
+        ->send()
+        ->json('data');
+
+    $liveVisitors = 0;
+    if (Cache::get('total-visitors')) {
+        $liveVisitors = Cache::get('total-visitors');
+    } else {
+        foreach ($response as $site) {
+            $siteData = CurrentVisitorsRequest::build()
+                ->authenticate()
+                ->siteId($site['id'])
+                ->send()
+                ->json();
+            $liveVisitors += $siteData['total'];
+        }
+    }
+
+    $totalViews = 0;
+    if (Cache::get('total-views')) {
+        $totalViews = Cache::get('total-views');
+    } else {
+        foreach ($response as $site) {
+            $siteData = AggregationRequest::build()
+                ->authenticate()
+                ->siteId($site['id'])
+                ->dateFrom(now()->subDays(30)->toDateTimeString())
+                ->dateTo(now()->toDateTimeString())
+                ->aggregates('pageviews')
+                ->entity('pageview')
+                ->send()
+                ->json();
+            $totalViews += $siteData[0]['pageviews'];
+        }
+    }
+
+    Cache::add('total-visitors', $liveVisitors, now()->addMinutes(5));
+    Cache::add('total-views', $totalViews, now()->addMinutes(5));
+
+    return view('welcome', compact('liveVisitors', 'totalViews'));
 });
