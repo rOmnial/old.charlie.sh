@@ -69,7 +69,7 @@
                 </div>
             </div>
         </div>
-        <script>
+        <script defer>
             startTyping();
         </script>
     </body>

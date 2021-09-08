@@ -1,6 +1,5 @@
 require('./bootstrap');
 
-// Can also be included with a regular script tag
 import Typed from 'typed.js';
 window.Typed = Typed;
 
