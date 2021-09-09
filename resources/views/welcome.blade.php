@@ -74,13 +74,13 @@
                             <section>
                                 <h2 class="bg-blue-400 px-1 py-0.5 max-w-max text-white mb-2">About</h2>
                                 <p class="text-gray-100">
-                                    I am a 20 year old developer from London, I love <span class="text-blue-200">building websites</span>, <span class="text-blue-200">managing servers</span> and <span class="text-blue-200">learning new things</span>. I'm also building my own brand <a class="font-medium text-blue-200 underline">Octanna</a> and have been <a class="font-medium text-blue-200 underline">blogging</a> my journey.
+                                    I am a 20 year old developer from London, I love <span class="text-blue-200">building websites</span>, <span class="text-blue-200">managing servers</span> and <span class="text-blue-200">learning new things</span>. I'm also building my brand <a class="font-medium text-blue-200 underline">Octanna</a> and have been <a class="font-medium text-blue-200 underline">blogging</a> my journey.
                                 </p>
                             </section>
                             <section>
                                 <h2 class="bg-blue-400 px-1 py-0.5 max-w-max text-white mb-2">Analytics</h2>
                                 <p class="text-gray-100">
-                                    According to <a href="" class="text-purple-200 underline">Fathom Analytics</a>, I currently have a combined total of <span class="text-blue-200">{{ number_format($liveVisitors) }}</span> live {{ Str::plural('visitor', $liveVisitors) }} and <span class="text-blue-200">{{ number_format($totalViews) }}</span> page {{ Str::plural('visit', $totalViews) }} in the last 30 days - across all my sites.
+                                    According to <a href="" class="text-purple-200 underline">Fathom Analytics</a>, I currently have a combined total of <span class="text-blue-200">{{ number_format($liveVisitors) }}</span> live {{ Str::plural('visitor', $liveVisitors) }} and <span class="text-blue-200">{{ number_format($totalViews) }}</span> page {{ Str::plural('visit', $totalViews) }} in the last 30 days across all my sites.
                                 </p>
                             </section>
                             <section>
