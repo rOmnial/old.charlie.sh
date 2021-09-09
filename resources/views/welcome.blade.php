@@ -94,7 +94,7 @@
                             <section>
                                 <h2 class="bg-blue-400 px-1 py-0.5 max-w-max text-white mb-2">Contact</h2>
                                 <p class="text-gray-100">
-                                    Feel free to contact me on 🐦 <a class="text-blue-200" href="https://twitter.com/heychazza">@heychazza</a> or  📧 <a class="text-blue-200" href="https://twitter.com/heychazza">ch@rli.es</a>.
+                                    Feel free to contact me on 🐦 <a class="text-blue-200" href="https://twitter.com/heychazza">@heychazza</a> or  📧 <a class="text-blue-200" href="mailto:ch@rli.es">ch@rli.es</a>.
                                 </p>
                             </section>
                         </div>
