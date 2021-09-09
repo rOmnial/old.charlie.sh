@@ -57,9 +57,9 @@
                         <div class="ml-2 w-3 h-3 bg-yellow-300 rounded-full"></div>
                         <div class="ml-2 w-3 h-3 bg-green-500 rounded-full"></div>
                     </div>
-                    <div class="flex mt-4">
+                    <div class="flex items-center mt-4">
                         <span class="text-green-400">charlies-mbp:~$</span>
-                        <p class="flex-1 items-center pl-2 text-gray-100" id="typed"></p>
+                        <p class="flex-1 pl-2 text-gray-100" id="typed"></p>
                         <br>
                     </div>
 
@@ -99,7 +99,7 @@
                             </section>
                         </div>
                     </div>
-                    <div class="flex mt-4" id="nextCommand" style="opacity: 0">
+                    <div class="flex items-center mt-4" id="nextCommand" style="opacity: 0">
                         <span class="text-green-400">charlies-mbp:~$</span>
                         <p class="pl-2 text-gray-100 animate-pulse">|</p>
                         <br>
