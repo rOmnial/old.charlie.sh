@@ -43,6 +43,10 @@
 
         {{-- Scripts --}}
         <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+
+        <!-- Fathom - beautiful, simple website analytics -->
+        <script src="https://tapir.analyse.org/script.js" data-site="XSNMSAGK" defer></script>
+        <!-- / Fathom -->
     </head>
     <body class="font-mono antialiased bg-gray-900">
         <div class="flex h-screen">
