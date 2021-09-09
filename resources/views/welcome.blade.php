@@ -101,6 +101,7 @@
                     </div>
                     <div class="flex mt-4" id="nextCommand" style="opacity: 0">
                         <span class="text-green-400">charlies-mbp:~$</span>
+                        <p class="pl-2 text-gray-100 animate-pulse">|</p>
                         <br>
                     </div>
                 </div>
