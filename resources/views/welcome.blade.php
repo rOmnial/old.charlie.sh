@@ -12,8 +12,8 @@
         <meta property="og:site_name" content="Charlie J">
         <meta property="og:description" content="A 20 year old developer from London, who loves building websites, managing servers and learning new things.">
         <meta property="og:url" content="{{ config('app.url') }}">
-        <meta property="og:secure_url" content="{{ config('app.url') }}/img/opengraph.png">
-        <meta property="og:image" content="{{ config('app.url') }}/img/opengraph.png">
+        <meta property="og:secure_url" content="{{ config('app.url') }}/img/opengraph.jpg">
+        <meta property="og:image" content="{{ config('app.url') }}/img/opengraph.jpg">
         <meta name="twitter:card" content="summary_large_image" />
 
         <link rel="icon" type="image/png" href="{{ config('app.url') }}/favicon/favicon-32x32.png">
