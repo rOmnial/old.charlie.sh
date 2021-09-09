@@ -85,7 +85,7 @@
                             </section>
                             <section>
                                 <h2 class="bg-blue-400 px-1 py-0.5 max-w-max text-white mb-2">Projects</h2>
-                                <div class="text-gray-100 flex items-center space-x-4">
+                                <div class="text-gray-100 sm:flex sm:items-center sm:space-x-4">
                                     <div>🎮 <a href="https://joinservers.com">joinservers.com</a></div>
                                     <div>📊 <a href="https://analyse.org">analyse.org</a></div>
                                     <div>🚗 <a href="https://btcczone.com">btcczone.com</a></div>
