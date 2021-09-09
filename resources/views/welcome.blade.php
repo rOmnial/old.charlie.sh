@@ -80,7 +80,7 @@
                             <section>
                                 <h2 class="bg-blue-400 px-1 py-0.5 max-w-max text-white mb-2">Analytics</h2>
                                 <p class="text-gray-100">
-                                    According to <a href="" class="text-purple-200 underline">Fathom Analytics</a>, I currently have a combined total of <span class="text-blue-200">{{ number_format($liveVisitors) }}</span> live {{ Str::plural('visitor', $liveVisitors) }} and <span class="text-blue-200">{{ number_format($totalViews) }}</span> page {{ Str::plural('visit', $totalViews) }} in the last 30 days across all my sites.
+                                    According to <a href="/ref/analytics" class="text-purple-200 underline">Fathom Analytics</a>, I currently have a combined total of <span class="text-blue-200">{{ number_format($liveVisitors) }}</span> live {{ Str::plural('visitor', $liveVisitors) }} and <span class="text-blue-200">{{ number_format($totalViews) }}</span> page {{ Str::plural('visit', $totalViews) }} in the last 30 days across all my sites.
                                 </p>
                             </section>
                             <section>
