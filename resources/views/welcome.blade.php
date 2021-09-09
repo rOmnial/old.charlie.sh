@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Charlie J</title>
+        <title>{{ config('app.name') }}</title>
 
         <meta name="description" content="A 20 year old developer from London, who loves building websites, managing servers and learning new things.">
         <meta property="og:locale" content="en_EN">
         <meta property='og:type' content="website">
-        <meta property="og:title" content="Charlie J">
-        <meta property="og:site_name" content="Charlie J">
+        <meta property="og:title" content="{{ config('app.name') }}">
+        <meta property="og:site_name" content="{{ config('app.name') }}">
         <meta property="og:description" content="A 20 year old developer from London, who loves building websites, managing servers and learning new things.">
         <meta property="og:url" content="{{ config('app.url') }}">
         <meta property="og:secure_url" content="{{ config('app.url') }}/img/opengraph.jpg">
@@ -44,9 +44,9 @@
         {{-- Scripts --}}
         <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 
-        <!-- Fathom - beautiful, simple website analytics -->
-        <script src="https://tapir.analyse.org/script.js" data-site="XSNMSAGK" defer></script>
-        <!-- / Fathom -->
+        {{-- Fathom - beautiful, simple website analytics --}}
+        <script src="{{ config('fathom.site_url') }}/script.js" data-site="{{ config('fathom.site_key') }}" defer></script>
+        {{-- / Fathom --}}
     </head>
     <body class="font-mono antialiased bg-gray-900">
         <div class="flex h-screen">

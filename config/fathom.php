@@ -12,4 +12,6 @@ return [
     */
 
     'token' => env('FATHOM_API_KEY'),
+    'site_url' => env('FATHOM_SITE_URL'),
+    'site_key' => env('FATHOM_SITE_KEY'),
 ];
