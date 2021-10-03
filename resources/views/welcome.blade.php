@@ -74,7 +74,7 @@
                             <section>
                                 <h2 class="bg-blue-400 px-1 py-0.5 max-w-max text-white mb-2">About</h2>
                                 <p class="text-gray-100">
-                                    I am a 20 year old developer from London, I love <span class="text-blue-200">building websites</span>, <span class="text-blue-200">managing servers</span> and <span class="text-blue-200">learning new things</span>. I'm currently building <a class="font-medium text-blue-200 underline">Analyse</a>, a game server analytics platform that aims to provide in-depth analysis.
+                                    I am a 20 year old developer from London, I love <span class="text-blue-200">building websites</span>, <span class="text-blue-200">managing servers</span> and <span class="text-blue-200">learning new things</span>. I'm currently building <a href="https://analyse.net" class="font-medium text-blue-200 underline">Analyse</a>, a game server analytics platform that aims to provide in-depth analysis.
                                 </p>
                             </section>
                             <section>
