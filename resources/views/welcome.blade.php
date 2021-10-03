@@ -74,7 +74,7 @@
                             <section>
                                 <h2 class="bg-blue-400 px-1 py-0.5 max-w-max text-white mb-2">About</h2>
                                 <p class="text-gray-100">
-                                    I am a 20 year old developer from London, I love <span class="text-blue-200">building websites</span>, <span class="text-blue-200">managing servers</span> and <span class="text-blue-200">learning new things</span>. I'm also building my brand <a class="font-medium text-blue-200 underline">Octanna</a> and have been <a class="font-medium text-blue-200 underline">blogging</a> my journey.
+                                    I am a 20 year old developer from London, I love <span class="text-blue-200">building websites</span>, <span class="text-blue-200">managing servers</span> and <span class="text-blue-200">learning new things</span>. I'm currently building <a class="font-medium text-blue-200 underline">Analyse</a>, a game server analytics platform that aims to provide in-depth analysis.
                                 </p>
                             </section>
                             <section>
@@ -86,9 +86,7 @@
                             <section>
                                 <h2 class="bg-blue-400 px-1 py-0.5 max-w-max text-white mb-2">Projects</h2>
                                 <div class="text-gray-100 sm:flex sm:items-center sm:space-x-4">
-                                    <div>🎮 <a href="https://joinservers.com">joinservers.com</a></div>
-                                    <div>📊 <a href="https://analyse.org">analyse.org</a></div>
-                                    <div>🚗 <a href="https://btcczone.com">btcczone.com</a></div>
+                                    <div>📊 <a href="https://analyse.net">analyse.net</a></div>
                                 </div>
                             </section>
                             <section>
