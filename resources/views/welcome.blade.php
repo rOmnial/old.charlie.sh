@@ -48,65 +48,65 @@
         <script src="{{ config('fathom.site_url') }}/script.js" data-site="{{ config('fathom.site_key') }}" defer></script>
         {{-- / Fathom --}}
     </head>
-    <body class="font-mono antialiased bg-gray-900">
-        <div class="flex h-screen">
-            <div class="m-auto mx-auto w-10/12 xl:w-7/12">
-                <div class="overflow-hidden px-5 pt-4 pb-6 text-sm subpixel-antialiased leading-relaxed bg-gray-800 rounded-lg shadow-lg lg:text-lg">
-                    <div class="flex mb-2">
-                        <div class="w-3 h-3 bg-red-500 rounded-full"></div>
-                        <div class="ml-2 w-3 h-3 bg-yellow-300 rounded-full"></div>
-                        <div class="ml-2 w-3 h-3 bg-green-500 rounded-full"></div>
-                    </div>
-                    <div class="flex items-center mt-4">
-                        <span class="text-green-400">charlies-mbp:~$</span>
-                        <p class="flex-1 pl-2 text-gray-100" id="typed"></p>
-                        <br>
-                    </div>
+    <body class="p-10 mx-auto">
 
-                    <div class="mt-2" id="commandResponse" style="opacity: 0">
-                        <section class="mt-4 mb-6">
-                            <h2 class="bg-blue-400 px-1 py-0.5 max-w-max text-white mb-2 sr-only">Heading</h2>
-                            <p class="text-gray-300">
-                                Hey, I'm Charlie! 👋
-                            </p>
-                        </section>
-                        <div class="space-y-8">
-                            <section>
-                                <h2 class="bg-blue-400 px-1 py-0.5 max-w-max text-white mb-2">About</h2>
-                                <p class="text-gray-100">
-                                    I am a 20 year old developer from London, I love <span class="text-blue-200">building websites</span>, <span class="text-blue-200">managing servers</span> and <span class="text-blue-200">learning new things</span>. I'm currently building <a href="https://analyse.net" class="font-medium text-blue-200 underline">Analyse</a>, a game server analytics platform that aims to provide in-depth analysis.
-                                </p>
-                            </section>
-                            <section>
-                                <h2 class="bg-blue-400 px-1 py-0.5 max-w-max text-white mb-2">Analytics</h2>
-                                <p class="text-gray-100">
-                                    According to <a href="/ref/analytics" class="text-purple-200 underline">Fathom Analytics</a>, I currently have a combined total of <span class="text-blue-200">{{ number_format($liveVisitors) }}</span> live {{ Str::plural('visitor', $liveVisitors) }} and <span class="text-blue-200">{{ number_format($totalViews) }}</span> page {{ Str::plural('visit', $totalViews) }} in the last 30 days across all my sites.
-                                </p>
-                            </section>
-                            <section>
-                                <h2 class="bg-blue-400 px-1 py-0.5 max-w-max text-white mb-2">Projects</h2>
-                                <div class="text-gray-100 sm:flex sm:items-center sm:space-x-4">
-                                    <div>📊 <a href="https://analyse.net">analyse.net</a></div>
-                                </div>
-                            </section>
-                            <section>
-                                <h2 class="bg-blue-400 px-1 py-0.5 max-w-max text-white mb-2">Contact</h2>
-                                <p class="text-gray-100">
-                                    Feel free to contact me on 🐦 <a class="text-blue-200" href="https://twitter.com/heychazza">@heychazza</a> or  📧 <a class="text-blue-200" href="mailto:ch@rli.es">ch@rli.es</a>.
-                                </p>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="flex items-center mt-4" id="nextCommand" style="opacity: 0">
-                        <span class="text-green-400">charlies-mbp:~$</span>
-                        <p class="pl-2 text-gray-100 animate-pulse">|</p>
-                        <br>
-                    </div>
-                </div>
+        <div class="flex flex-row-reverse lg:flex-row justify-between items-center py-10">
+            <div class="lg:w-2/3 ml-4 lg:ml-0">
+                <h1 class="text-lg sm:text-2xl md:text-3xl lg:text-4xl lg:w-10/12">Hi! I'm Charlie, a Web & Software Developer based in London, England.</h1>
+                <p class="flex space-x-3 mt-2 lg:mt-4">
+                    <a href="https://github.com/heychazza">
+                        <img src="https://img.shields.io/github/followers/heychazza?label=GitHub&amp;style=social" alt="HeyChazza GitHub">
+                    </a>
+                    <a href="https://twitter.com/heychazza">
+                        <img src="https://img.shields.io/twitter/follow/heychazza?style=social&label=Twitter" alt="HeyChazza Twitter">
+                    </a>
+                </p>
+            </div>
+            <div class="lg:w-1/3">
+                <img class="w-40 rounded" src="https://avatars.githubusercontent.com/u/47271716?v=4" alt="">
             </div>
         </div>
-        <script defer>
-            startTyping();
-        </script>
+
+        <div class="lg:flex lg:justify-between">
+            <div class="lg:w-7/12 prose">
+                <h3>Background</h3>
+
+                <p>I grew up in a generation where technology was around us, and so I picked up using a computer fairly quickly from a young age. My passion of LEGO allowed me to build things - However, I had an issue, I couldn't carry it with me without the fear of my hard work crumbling beneath me.</p>
+                <p>This is where Minecraft changed that, at 10 years old I first found out about Minecraft and it's changed my life on a huge scale. It not only allowed me to take my creations anywhere, but also be able to share with others much easier and connect with school friends to play.</p>
+                <p>This game became my gateway to computer programming, at 13 years old I started building server-sided modifications, which not only gave me experience, but taught me about financials and how my hobby could earn me money in-turn.</p>
+
+                <h3>Current Progress</h3>
+                <p>I have gone on to build innovative solutions that have been used by close to <span class="font-medium text-green-500">1 million</span> monthly visitors. Recently I sold my first successful business for a <span class="font-medium text-green-500">5-figure</span> amount - a Minecraft analytics platform for tracking rare items within the game. We kept our site free to use, and generated <span class="font-medium text-green-500">4 figures</span> per month by selling advertisement space on our sites.</p>
+                <p>Prior to selling, I worked for an insurance company, where I built a fully-fledged fraud detection system that utilised a series of inter-connected checks to find risky customers. I am now going full-time building <a href="https://analyse.net">Analyse</a> - a Minecraft server analytics platform for providing in-depth community analysis.</p>
+
+                <h3>Notable Achievements</h3>
+                <ul>
+                    <li>At 13: I dived into computer programming using Java.</li>
+                    <li>At 14: I built a server-sided modification that reached <strong>40,000</strong> downloads.</li>
+                    <li>At 15: I created a server-sided java modification that generated <strong>$10,000</strong>.</li>
+                    <li>At 18: I sold my first domain name for <strong>$2,700</strong>.</li>
+                    <li>At 19: I launched a project that reached <strong>200</strong> concurrent visitors, with <strong>800,000</strong> monthly visitors, in turn generating thousands per month.</li>
+                    <li>At 20: I sold a successful business for a 5 figure sum, after running it for a year.</li>
+                    <li class="italic">At xx, who knows what the future holds..</li>
+                </ul>
+            </div>
+            <div class="lg:w-1/3 mt-5 lg:mt-0 prose">
+                <h3>Projects</h3>
+                <ul>
+                    <li><a href="https://analyse.net">Analyse</a></li>
+                    <li><a href="https://octanna.com">Octanna</a></li>
+                    <li><a href="https://btcczone.com">BTCC Zone</a></li>
+                    <li><a href="https://growyourserver.com">GrowYourServer</a></li>
+                    <li><a href="https://thewildupdate.com">TheWildUpdate</a></li>
+                </ul>
+
+                <h3>Tech Stack</h3>
+                <ul>
+                    <li>PHP (Laravel)</li>
+                    <li>Javascript (Vue)</li>
+                    <li>Docker</li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
